@@ -1,10 +1,12 @@
 package org.outrospective.calisthenics.model.resume;
 
-public enum NullResume extends Resume {
+import org.outrospective.calisthenics.model.jobseeker.JobseekerName;
+
+public enum NullResume implements Resume {
 
     NULL_RESUME;
 
-    public NullResume() {
-        super("No resume");
+    public JobseekerName getName() {
+        return new JobseekerName("No", "resume");
     }
 }

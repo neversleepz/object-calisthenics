@@ -14,8 +14,7 @@ public class JobApplication {
     private final Instant dateApplied;
 
     public JobApplication(Job job, Jobseeker applicant, Resume resume) {
-        this(job, applicant, resume);
-        this.dateApplied = Instant.now();
+        this(job, applicant, resume, Instant.now());
     }
 
     public JobApplication(Job job, Jobseeker applicant, Resume resume, Instant dateApplied) {

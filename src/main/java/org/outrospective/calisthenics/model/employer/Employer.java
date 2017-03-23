@@ -2,9 +2,11 @@ package org.outrospective.calisthenics.model.employer;
 
 import org.outrospective.calisthenics.model.job.Job;
 
-public class Employer {
+import java.util.List;
 
-    void post(Job job);
+public abstract class Employer {
 
-    List<Job> postedJobs();
+    abstract void post(Job job);
+
+    abstract List<Job> postedJobs();
 }

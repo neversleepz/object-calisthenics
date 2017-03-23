@@ -1,4 +1,4 @@
-package org.outrospective.calisthenics.model.job; 
+package org.outrospective.calisthenics.model.job;
 
 public class JReq extends Job {
 

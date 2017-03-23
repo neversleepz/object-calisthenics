@@ -1,4 +1,4 @@
-package org.outrospective.calisthenics.model.job; 
+package org.outrospective.calisthenics.model.job;
 
 // TODO: should subclasses of Job have job in their name, eg AtsJob?
 public class ATS extends Job {

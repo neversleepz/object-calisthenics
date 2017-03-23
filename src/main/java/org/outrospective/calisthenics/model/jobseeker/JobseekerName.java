@@ -1,20 +1,39 @@
 package org.outrospective.calisthenics.model.jobseeker;
 
-import static java.util.Objects.equals;
+import java.util.Objects;
 
 public class JobseekerName {
 
-    public boolean equals(Object that) {
-        if (!this instanceof that)
-            return false;
+    private String firstName;
+    private String lastName;
 
-//        JobseekerName other = (JobseekerName) that;
-        // TODO: elaboarate on this fields that JobseekerName has (eg Objects.equals(this.first, other.first)
-        return Objects.equals(this, other);
+    public JobseekerName(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
+    @Override
+    public boolean equals(Object that) {
+        if (this == that) return true;
+        if (!(that instanceof JobseekerName)) return false;
+
+        JobseekerName other = (JobseekerName) that;
+        return Objects.equals(this.firstName, other.firstName) &&
+                Objects.equals(this.lastName, other.lastName);
+    }
+
+    @Override
     public int hashCode() {
         // TODO: add fields
         return Objects.hash(0);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s", field(firstName), field(lastName));
+    }
+
+    private String field(String field) {
+        return Objects.toString(field, "Unknown");
     }
 }

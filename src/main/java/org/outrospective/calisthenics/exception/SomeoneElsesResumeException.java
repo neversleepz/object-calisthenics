@@ -1,5 +1,7 @@
 package org.outrospective.calisthenics.exception;
 
+import org.outrospective.calisthenics.model.jobseeker.JobseekerName;
+
 import static java.lang.String.format;
 
 public class SomeoneElsesResumeException extends IllegalArgumentException {
