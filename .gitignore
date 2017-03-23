@@ -1,4 +1,8 @@
+# compilation
 target/
+build/
+
+#tools
 .gradle/
 .idea/
 object-calisthenics.iml
