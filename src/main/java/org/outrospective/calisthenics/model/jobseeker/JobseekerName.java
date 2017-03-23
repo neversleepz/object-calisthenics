@@ -24,8 +24,7 @@ public class JobseekerName {
 
     @Override
     public int hashCode() {
-        // TODO: add fields
-        return Objects.hash(0);
+        return Objects.hash(firstName, lastName);
     }
 
     @Override
